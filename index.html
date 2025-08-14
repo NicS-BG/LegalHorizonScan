@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Regulatory Monitor – NYC/NY (PoC)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Regulatory Monitor – NYC/NY (PoC)</h1>
+  <p class="subtitle">Weekly changes & signals for NYC pension mandates</p>
+</header>
+
+<main>
+  <section class="controls">
+    <label for="filter">Filter tags:</label>
+    <select id="filter">
+      <option value="">All</option>
+      <option value="sanctions">Sanctions</option>
+      <option value="antiboycott">Antiboycott</option>
+      <option value="esg">ESG</option>
+      <option value="prohibited_instruments">Prohibited instruments</option>
+      <option value="country_issuer_restrictions">Country/issuer</option>
+      <option value="diversification">Diversification</option>
+    </select>
+    <button id="printBtn">Print/PDF</button>
+  </section>
+
+  <section id="meta"></section>
+
+  <section>
+    <h2>Authoritative changes</h2>
+    <div id="authoritative" class="cards"></div>
+  </section>
+
+  <section>
+    <h2>Proposals & policy/news signals</h2>
+    <div id="signals" class="cards"></div>
+  </section>
+
+  <footer>
+    <p>Reliability Tiers: T1 = primary official; T2 = major press; T3 = legal/trade commentary; T4 = social. This PoC is not legal advice.</p>
+  </footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
